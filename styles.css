@@ -105,8 +105,8 @@ header .logo {
 
 .product img {
     width: 100%;
-    height: auto;
-    max-width: 100%;
+    height: 80%;
+    max-width: 80%;
     border-radius: 5px;
 }
 
@@ -114,7 +114,7 @@ header .logo {
 .product h3 {
     margin-top: 10px;
     font-weight: bold;
-    font-size: 1.5rem;  /* Larger font size */
+    font-size: 3rem;  /* Larger font size */
 }
 
 /* Style the price */
