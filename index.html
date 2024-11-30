@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamland Designer Boutique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Dreamland Designer Boutique</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Dreamland Designer Boutique</h1>
+        <p>Your one-stop shop for boutique designer suits and premium leather handbags.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products">
+        <h2>Our Collection</h2>
+
+        <!-- View Options -->
+        <div class="view-options">
+            <button class="view-btn" onclick="changeView('grid')">Grid View</button>
+            <button class="view-btn" onclick="changeView('single')">Single View</button>
+            <button class="view-btn" onclick="changeView('multiple')">Multiple View</button>
+        </div>
+
+        <!-- Product Container -->
+        <div id="product-container" class="product-grid">
+            <div class="product">
+                <img src="suit.jpg" alt="Boutique Designer Suit">
+                <h3>Boutique Designer Suits</h3>
+                <p>Elegant, handcrafted suit tailored for every occasion.</p>
+                <button class="btn">View More</button>
+            </div>
+            <div class="product">
+                <img src="suit1.jpg" alt="Designer Yellow Net Suit">
+                <h3>Designer Yellow Net Suit 1</h3>
+                <p>Elegant, handcrafted net suit tailored for every occasion.</p>
+                <button class="btn">View More</button>
+            </div>
+            <div class="product">
+                <img src="handbag.jpg" alt="Leather Handbag">
+                <h3>Leather Handbags</h3>
+                <p>Premium leather handbags with unmatched style and quality.</p>
+                <button class="btn">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Dreamland Designer Boutique combines elegance, style, and craftsmanship to offer luxury fashion. Explore our boutique collection crafted with care and designed for sophistication.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+            <p><strong>Phone:</strong> 98****21**</p>
+            <p><strong>Email:</strong> ABC***@gmail.com</p>
+        </div>
+
+        <!-- Contact Form -->
+        <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="dreamland@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Dreamland Designer Boutique. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to handle the view switching
+        function changeView(viewType) {
+            const container = document.getElementById('product-container');
+            
+            // Remove all view classes
+            container.classList.remove('grid', 'single', 'multiple');
+            
+            // Add the selected view class
+            container.classList.add(viewType);
+        }
+    </script>
+</body>
+</html>
